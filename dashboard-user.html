@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard — Stackly</title>
+<link rel="icon" href="https://wsrv.nl/?url=https://snabsolutions.in/wp-content/uploads/2026/02/stackly-snab-solutions.png&w=64&h=64&output=webp&q=80&fit=inside">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="dashboard.css">
+</head>
+<body class="dash-body">
+
+<div class="sidebar-scrim"></div>
+
+<div class="dash-shell">
+
+  <!-- Sidebar -->
+  <aside class="dash-sidebar">
+    <div class="brand-row">
+      <a href="index.html"><img class="logo-tint" src="https://wsrv.nl/?url=https://snabsolutions.in/wp-content/uploads/2026/02/stackly-snab-solutions.png&w=260&h=104&output=webp&q=80&fit=inside" alt="Stackly">
+   </a> </div>
+    <nav class="dash-nav">
+      <div class="nav-label">Workspace</div>
+      <a href="#" class="dash-link active" data-target="sec-overview">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/></svg>
+        Overview
+      </a>
+      <a href="#" class="dash-link" data-target="sec-billing">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+        Billing & invoices
+      </a>
+      <a href="#" class="dash-link" data-target="sec-usage">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M7 15l4-6 3 4 5-8"/></svg>
+        Usage
+      </a>
+      <a href="#" class="dash-link" data-target="sec-activity">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+        Activity
+        <span class="badge-mini">3</span>
+      </a>
+      <a href="#" class="dash-link" data-target="sec-team">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+        Team
+      </a>
+      <div class="nav-label">Account</div>
+      <a href="#" class="dash-link" data-target="sec-profile">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+        My profile
+      </a>
+      <a href="#" class="dash-link" data-target="sec-settings">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 00.34 1.87l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.7 1.7 0 00-1.87-.34 1.7 1.7 0 00-1 1.55V21a2 2 0 11-4 0v-.09a1.7 1.7 0 00-1-1.55 1.7 1.7 0 00-1.87.34l-.06.06a2 2 0 11-2.83-2.83l.06-.06A1.7 1.7 0 004.6 15a1.7 1.7 0 00-1.55-1H3a2 2 0 110-4h.09A1.7 1.7 0 004.6 9a1.7 1.7 0 00-.34-1.87l-.06-.06a2 2 0 112.83-2.83l.06.06A1.7 1.7 0 009 4.6a1.7 1.7 0 001-1.55V3a2 2 0 114 0v.09a1.7 1.7 0 001 1.55 1.7 1.7 0 001.87-.34l.06-.06a2 2 0 112.83 2.83l-.06.06A1.7 1.7 0 0019.4 9a1.7 1.7 0 001.55 1H21a2 2 0 110 4h-.09a1.7 1.7 0 00-1.55 1Z"/></svg>
+        Settings
+      </a>
+      <a href="contact.html" class="dash-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.4 8.4 0 01-9.9 8.3A8.5 8.5 0 013 12.6 8.4 8.4 0 0111.3 3a8.5 8.5 0 019.7 8.5Z"/><path d="M8 12h8M8 16h5"/></svg>
+        Help & support
+      </a>
+    </nav>
+    <div class="dash-sidebar-foot">
+      <div class="upgrade-box">
+        <p>You're on the <strong>Growth</strong> plan. Unlock more automations on Scale.</p>
+        <a href="pricing.html" class="btn btn-primary btn-block" style="padding:9px;font-size:12.5px;"><span>Upgrade plan</span></a>
+      </div>
+      <button class="sidebar-logout logout-trigger">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4"/><path d="M16 17l5-5-5-5"/><path d="M21 12H9"/></svg>
+        Log out
+      </button>
+    </div>
+  </aside>
+
+  <!-- Main -->
+  <div class="dash-main">
+    <header class="dash-topbar">
+      <div class="topbar-left">
+        <button class="sidebar-burger" aria-label="Toggle menu"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+        <div class="dash-search">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+          <input type="text" placeholder="Search invoices, docs…">
+        </div>
+      </div>
+      <div class="topbar-right">
+        <button class="icon-btn notif-btn" aria-label="Notifications">
+          <span class="ping"></span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8a6 6 0 10-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 01-3.4 0"/></svg>
+        </button>
+        <div class="user-chip">
+          <div class="chip-avatar" data-session-initial>C</div>
+          <div class="chip-info">
+            <strong data-session-name>Customer</strong>
+            <span>Growth plan</span>
+          </div>
+          <svg class="chip-caret" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+
+          <div class="user-menu">
+            <div class="user-menu-head">
+              <strong data-session-name>Customer</strong>
+              <span data-session-id>—</span>
+            </div>
+            <a href="#" data-action="Opening your profile settings">👤 My profile</a>
+            <a href="#" data-action="Opening billing preferences">💳 Billing preferences</a>
+            <a href="contact.html">🛟 Help & support</a>
+            <hr>
+            <button class="danger logout-trigger">↩ Log out</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="dash-content">
+
+      <!-- OVERVIEW -->
+      <section class="dash-section" id="sec-overview">
+        <div class="dash-head-row">
+          <div>
+            <h1>Welcome back<span data-session-name style="font-family:'Fraunces';">, Customer</span> 👋</h1>
+            <p>Here's what's happening with your workspace today.</p>
+            <div class="id-pill">
+              Logged in as <strong data-session-id>—</strong>
+              <button class="copy-id" aria-label="Copy login ID"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg></button>
+            </div>
+          </div>
+          <a href="pricing.html" class="btn btn-primary"><span>Upgrade plan</span></a>
+        </div>
+
+        <div class="quick-actions">
+          <button class="quick-action" data-action="Generating your latest invoice PDF…">
+            <div class="qa-icon">🧾</div>
+            <strong>Download invoice</strong>
+            <span>Latest billing PDF</span>
+          </button>
+          <button class="quick-action" data-action="Invite link copied — share it with your team">
+            <div class="qa-icon">➕</div>
+            <strong>Invite teammate</strong>
+            <span>Add a seat to your plan</span>
+          </button>
+          <button class="quick-action" data-action="Opening the automation builder…">
+            <div class="qa-icon">🔗</div>
+            <strong>New automation</strong>
+            <span>Build a workflow</span>
+          </button>
+          <button class="quick-action" data-action="Support ticket created — we'll reply within 2 hours">
+            <div class="qa-icon">🛟</div>
+            <strong>Contact support</strong>
+            <span>We usually reply fast</span>
+          </button>
+        </div>
+
+        <div class="stat-grid">
+          <div class="stat-card">
+            <div class="stat-top"><div class="stat-icon gold">💳</div><span class="stat-delta up">+18.4%</span></div>
+            <div class="stat-num" data-count="4829.10" data-decimals="2" data-suffix="">$0</div>
+            <div class="stat-label">Monthly spend</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-top"><div class="stat-icon violet">⚙️</div><span class="stat-delta up">+3</span></div>
+            <div class="stat-num" data-count="12">0</div>
+            <div class="stat-label">Active automations</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-top"><div class="stat-icon teal">👥</div><span class="stat-delta up">+2</span></div>
+            <div class="stat-num" data-count="8">0</div>
+            <div class="stat-label">Team seats used</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-top"><div class="stat-icon rose">📁</div><span class="stat-delta down">-1</span></div>
+            <div class="stat-num" data-count="3">0</div>
+            <div class="stat-label">Open support tickets</div>
+          </div>
+        </div>
+
+        <div class="panel-grid">
+          <div class="panel">
+            <div class="panel-head">
+              <div><h3>Usage this month</h3><p>API calls & workflow runs across your workspace</p></div>
+              <div class="chip-tabs"><button class="active">Week</button><button>Month</button><button>Year</button></div>
+            </div>
+            <div class="bar-chart">
+              <div class="bar-col"><div class="bar" style="height:40%"></div><span class="bar-label">Mon</span></div>
+              <div class="bar-col"><div class="bar" style="height:55%"></div><span class="bar-label">Tue</span></div>
+              <div class="bar-col"><div class="bar" style="height:35%"></div><span class="bar-label">Wed</span></div>
+              <div class="bar-col"><div class="bar" style="height:70%"></div><span class="bar-label">Thu</span></div>
+              <div class="bar-col"><div class="bar" style="height:50%"></div><span class="bar-label">Fri</span></div>
+              <div class="bar-col"><div class="bar" style="height:85%"></div><span class="bar-label">Sat</span></div>
+              <div class="bar-col"><div class="bar" style="height:64%"></div><span class="bar-label">Sun</span></div>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="panel-head"><div><h3>Plan usage</h3><p>Of your Growth plan quota</p></div></div>
+            <div class="donut-wrap">
+              <div class="donut" style="--p1:52%; --p2:78%;"><div class="donut-center"><strong>78%</strong><span>USED</span></div></div>
+              <div class="legend">
+                <span><i style="background:var(--gold)"></i> API calls — 52%</span>
+                <span><i style="background:var(--violet)"></i> Automations — 26%</span>
+                <span><i style="background:var(--teal)"></i> Remaining — 22%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-head"><div><h3>Account health</h3><p>Where you stand this billing cycle</p></div></div>
+          <div class="health-list">
+            <div class="health-row">
+              <div class="health-top"><strong>API calls</strong><span>5,200 / 10,000</span></div>
+              <div class="health-bar"><i style="width:52%"></i></div>
+            </div>
+            <div class="health-row">
+              <div class="health-top"><strong>Automation runs</strong><span>312 / 500</span></div>
+              <div class="health-bar warn"><i style="width:62%"></i></div>
+            </div>
+            <div class="health-row">
+              <div class="health-top"><strong>Storage</strong><span>8.4GB / 10GB</span></div>
+              <div class="health-bar crit"><i style="width:84%"></i></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-head"><div><h3>Recent activity</h3><p>Latest events on your account</p></div></div>
+          <div class="activity-list">
+            <div class="activity-item"><div class="activity-dot" style="background:rgba(21,156,133,.12);">💳</div><div class="activity-body"><p>Payment of $482.00 received successfully.</p><span>2 hours ago</span></div></div>
+            <div class="activity-item"><div class="activity-dot" style="background:rgba(106,86,224,.12);">🔗</div><div class="activity-body"><p>Automation "Onboarding sequence" ran 24 times.</p><span>Yesterday, 4:12 PM</span></div></div>
+            <div class="activity-item"><div class="activity-dot" style="background:rgba(179,130,47,.12);">👥</div><div class="activity-body"><p>You invited priya@yourcompany.com to the workspace.</p><span>2 days ago</span></div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- BILLING -->
+      <section class="dash-section" id="sec-billing" style="display:none;">
+        <div class="dash-head-row">
+          <div><h1>Billing & invoices</h1><p>Manage your plan, payment method, and invoice history.</p></div>
+          <button class="btn btn-primary" data-action="Redirecting to secure payment portal…"><span>Update payment method</span></button>
+        </div>
+        <div class="panel">
+          <div class="panel-head"><div><h3>Invoice history</h3><p>Download or resend any past invoice</p></div></div>
+          <table class="dash-table">
+            <thead><tr><th>Invoice</th><th>Date</th><th>Amount</th><th>Status</th><th></th></tr></thead>
+            <tbody>
+              <tr><td>INV-2026-0091</td><td>Sep 1, 2026</td><td>$482.00</td><td><span class="status-pill paid"><i></i>Paid</span></td>
+                <td class="table-actions"><button class="mini-btn" data-msg="Downloading INV-2026-0091.pdf"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 21h16"/></svg></button></td></tr>
+              <tr><td>INV-2026-0080</td><td>Aug 1, 2026</td><td>$482.00</td><td><span class="status-pill paid"><i></i>Paid</span></td>
+                <td class="table-actions"><button class="mini-btn" data-msg="Downloading INV-2026-0080.pdf"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 21h16"/></svg></button></td></tr>
+              <tr><td>INV-2026-0069</td><td>Jul 1, 2026</td><td>$430.00</td><td><span class="status-pill pending"><i></i>Pending</span></td>
+                <td class="table-actions"><button class="mini-btn" data-msg="Downloading INV-2026-0069.pdf"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 21h16"/></svg></button></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- USAGE -->
+      <section class="dash-section" id="sec-usage" style="display:none;">
+        <div class="dash-head-row"><div><h1>Usage</h1><p>Track consumption against your Growth plan quota.</p></div></div>
+        <div class="panel">
+          <div class="panel-head"><div><h3>API calls over time</h3><p>Last 7 days</p></div><div class="chip-tabs"><button class="active">Week</button><button>Month</button></div></div>
+          <div class="bar-chart">
+            <div class="bar-col"><div class="bar" style="height:30%"></div><span class="bar-label">Mon</span></div>
+            <div class="bar-col"><div class="bar" style="height:62%"></div><span class="bar-label">Tue</span></div>
+            <div class="bar-col"><div class="bar" style="height:44%"></div><span class="bar-label">Wed</span></div>
+            <div class="bar-col"><div class="bar" style="height:80%"></div><span class="bar-label">Thu</span></div>
+            <div class="bar-col"><div class="bar" style="height:56%"></div><span class="bar-label">Fri</span></div>
+            <div class="bar-col"><div class="bar" style="height:90%"></div><span class="bar-label">Sat</span></div>
+            <div class="bar-col"><div class="bar" style="height:70%"></div><span class="bar-label">Sun</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ACTIVITY -->
+      <section class="dash-section" id="sec-activity" style="display:none;">
+        <div class="dash-head-row"><div><h1>Activity</h1><p>A full log of everything happening on your account.</p></div></div>
+        <div class="panel">
+          <div class="activity-list">
+            <div class="activity-item"><div class="activity-dot" style="background:rgba(21,156,133,.12);">💳</div><div class="activity-body"><p>Payment of $482.00 received successfully.</p><span>2 hours ago</span></div></div>
+            <div class="activity-item"><div class="activity-dot" style="background:rgba(106,86,224,.12);">🔗</div><div class="activity-body"><p>Automation "Onboarding sequence" ran 24 times.</p><span>Yesterday, 4:12 PM</span></div></div>
+            <div class="activity-item"><div class="activity-dot" style="background:rgba(179,130,47,.12);">👥</div><div class="activity-body"><p>You invited priya@yourcompany.com to the workspace.</p><span>2 days ago</span></div></div>
+            <div class="activity-item"><div class="activity-dot" style="background:rgba(179,64,47,.1);">🛟</div><div class="activity-body"><p>Support ticket #4821 was marked resolved.</p><span>4 days ago</span></div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TEAM -->
+      <section class="dash-section" id="sec-team" style="display:none;">
+        <div class="dash-head-row">
+          <div><h1>Team</h1><p>Everyone with access to your workspace.</p></div>
+          <button class="btn btn-primary" data-action="Invite link copied — share it with your team"><span>+ Invite teammate</span></button>
+        </div>
+        <div class="panel">
+          <div class="panel-head"><div><h3>Workspace members</h3><p>8 of 10 seats used on the Growth plan</p></div></div>
+          <div class="member-list">
+            <div class="member-row"><div class="row-avatar">DC</div><div class="member-info"><strong data-session-name>Customer</strong><span data-session-id>—</span></div><span class="member-role">Owner</span></div>
+            <div class="member-row"><div class="row-avatar">PS</div><div class="member-info"><strong>Priya Sharma</strong><span>priya@yourcompany.com</span></div><span class="member-role">Admin</span></div>
+            <div class="member-row"><div class="row-avatar">AN</div><div class="member-info"><strong>Arjun Nair</strong><span>arjun@yourcompany.com</span></div><span class="member-role">Member</span></div>
+            <div class="member-row"><div class="row-avatar">SG</div><div class="member-info"><strong>Sneha Gupta</strong><span>sneha@yourcompany.com</span></div><span class="member-role">Member</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROFILE -->
+      <section class="dash-section" id="sec-profile" style="display:none;">
+        <div class="dash-head-row"><div><h1>My profile</h1><p>Your account details for this session.</p></div></div>
+        <div class="panel" style="max-width:520px;">
+          <div class="panel-head"><div><h3>Account information</h3><p>Pulled from your current login session</p></div></div>
+          <table class="dash-table">
+            <tbody>
+              <tr><td style="color:var(--text-faint);width:40%;">Login ID</td><td data-session-id>—</td></tr>
+              <tr><td style="color:var(--text-faint);">Display name</td><td data-session-name>—</td></tr>
+              <tr><td style="color:var(--text-faint);">Role</td><td>Customer</td></tr>
+              <tr><td style="color:var(--text-faint);">Signed in</td><td data-session-time>—</td></tr>
+              <tr><td style="color:var(--text-faint);">Plan</td><td>Growth</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- SETTINGS -->
+      <section class="dash-section" id="sec-settings" style="display:none;">
+        <div class="dash-head-row"><div><h1>Settings</h1><p>Manage preferences for your workspace.</p></div></div>
+        <div class="panel" style="max-width:520px;">
+          <div class="panel-head"><div><h3>Preferences</h3></div></div>
+          <div style="display:grid;gap:16px;">
+            <button class="btn btn-ghost btn-block" data-action="Two-factor authentication enabled"><span>Enable two-factor authentication</span></button>
+            <button class="btn btn-ghost btn-block" data-action="Email preferences updated"><span>Manage email notifications</span></button>
+            <button class="btn btn-danger btn-block logout-trigger"><span>Log out of this account</span></button>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+</div>
+
+<!-- Logout confirm modal -->
+<div class="modal-overlay logout">
+  <div class="modal-box">
+    <div class="m-icon">↩</div>
+    <h3>Log out of Stackly?</h3>
+    <p>You'll need to sign in again to access your dashboard.</p>
+    <div class="modal-actions">
+      <button class="btn btn-ghost cancel-logout"><span>Cancel</span></button>
+      <button class="btn btn-danger confirm-logout"><span>Log out</span></button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+<script src="dashboard.js"></script>
+<script>initDashboardShell('customer');</script>
+</body>
+</html>

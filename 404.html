@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page not found — Stackly</title>
+<meta name="description" content="The page you're looking for doesn't exist or has moved.">
+<link rel="icon" href="https://wsrv.nl/?url=https://snabsolutions.in/wp-content/uploads/2026/02/stackly-snab-solutions.png&w=64&h=64&output=webp&q=80&fit=inside">
+<link rel="stylesheet" href="styles.css">
+<style>
+/* ===========================================================
+   STACKLY — 404 page
+   =========================================================== */
+
+.notfound-page{ overflow-x:hidden; }
+
+.nf-wrap{
+  position:relative; min-height:100svh; background: linear-gradient(165deg, #1a1610, #241d12 55%, #16130d);
+  display:flex; flex-direction:column; align-items:center; overflow:hidden; color: var(--ink);
+  padding: 44px 24px 60px;
+}
+
+.nf-wrap .sv-orb{ position:absolute; border-radius:50%; filter: blur(80px); opacity:.55; animation: svFloat 16s ease-in-out infinite; }
+.nf-wrap .sv-orb.o1{ width:380px;height:380px; background: rgba(179,130,47,.45); top:-120px; left:-100px; }
+.nf-wrap .sv-orb.o2{ width:320px;height:320px; background: rgba(106,86,224,.4); bottom:-110px; right:-90px; animation-delay:-6s; }
+.nf-wrap .sv-orb.o3{ width:220px;height:220px; background: rgba(21,156,133,.3); top:45%; left:55%; animation-delay:-11s; }
+@keyframes svFloat{ 0%,100%{ transform: translate(0,0) scale(1);} 50%{ transform: translate(24px,-26px) scale(1.08);} }
+
+.nf-wrap .sv-grid{
+  position:absolute; inset:0; opacity:.15;
+  background-image: linear-gradient(rgba(250,247,240,.5) 1px, transparent 1px), linear-gradient(90deg, rgba(250,247,240,.5) 1px, transparent 1px);
+  background-size: 46px 46px;
+  mask-image: radial-gradient(circle at 50% 10%, black, transparent 70%);
+}
+
+.nf-brand{ position:relative; z-index:2; }
+.nf-brand img{ height:30px; filter: brightness(0) invert(1); }
+
+.nf-content{
+  position:relative; z-index:2; margin:auto 0; text-align:center; max-width: 560px;
+  display:flex; flex-direction:column; align-items:center;
+}
+
+.nf-code{
+  font-family:'Fraunces'; font-size: clamp(96px,16vw,180px); line-height:1; font-weight:600;
+  background: linear-gradient(120deg, var(--gold-bright), var(--gold) 45%, #e0b25f, var(--gold-bright));
+  -webkit-background-clip:text; background-clip:text; color:transparent;
+  opacity:0; transform: translateY(20px); animation: nfIn .7s var(--ease) .05s forwards;
+}
+
+.nf-content h1{
+  font-family:'Fraunces'; font-size: clamp(24px,3vw,32px); margin-top:8px; color: var(--ink);
+  opacity:0; transform: translateY(20px); animation: nfIn .7s var(--ease) .18s forwards;
+}
+
+.nf-content p{
+  margin-top:14px; font-size:15px; color: rgba(250,247,240,.62); max-width: 44ch;
+  opacity:0; transform: translateY(20px); animation: nfIn .7s var(--ease) .28s forwards;
+}
+
+@keyframes nfIn{ to{ opacity:1; transform: translateY(0); } }
+
+.nf-actions{
+  display:flex; gap:14px; margin-top:34px; flex-wrap:wrap; justify-content:center;
+  opacity:0; transform: translateY(20px); animation: nfIn .7s var(--ease) .38s forwards;
+}
+
+.nf-btn{
+  display:inline-flex; align-items:center; gap:8px; padding: 13px 24px; border-radius: 12px;
+  font-size:14.5px; font-weight:700; transition: transform .3s var(--ease), box-shadow .3s var(--ease), background .3s ease;
+}
+.nf-btn-primary{
+  color:#211405; background: linear-gradient(120deg, var(--gold-bright), var(--gold) 45%, #e0b25f, var(--gold-bright));
+  box-shadow: 0 14px 30px -12px rgba(179,130,47,.55);
+}
+.nf-btn-primary:hover{ transform: translateY(-2px); box-shadow: 0 18px 38px -12px rgba(179,130,47,.7); }
+.nf-btn-ghost{
+  color: var(--ink); background: rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.16);
+}
+.nf-btn-ghost:hover{ background: rgba(255,255,255,.1); transform: translateY(-2px); }
+
+.nf-links{
+  margin-top:30px; font-size:13px; color: rgba(250,247,240,.5); display:flex; gap:10px; align-items:center;
+  opacity:0; transform: translateY(20px); animation: nfIn .7s var(--ease) .48s forwards;
+}
+.nf-links a{ color: rgba(250,247,240,.72); }
+.nf-links a:hover{ color: var(--gold-bright); }
+
+@media (max-width: 560px){
+  .nf-actions{ flex-direction:column; width:100%; }
+  .nf-btn{ justify-content:center; }
+}
+</style>
+</head>
+<body class="notfound-page">
+
+<div class="grain"></div>
+
+<div class="nf-wrap">
+  <span class="sv-orb o1"></span>
+  <span class="sv-orb o2"></span>
+  <span class="sv-orb o3"></span>
+  <div class="sv-grid"></div>
+
+  <a href="index.html" class="nf-brand">
+    <img src="https://wsrv.nl/?url=https://snabsolutions.in/wp-content/uploads/2026/02/stackly-snab-solutions.png&w=220&h=88&output=webp&q=80&fit=inside" alt="Stackly logo">
+  </a>
+
+  <div class="nf-content">
+    <div class="nf-code" aria-hidden="true">404</div>
+    <h1>This page took a wrong turn.</h1>
+    <p>The page you're looking for doesn't exist, moved, or never made it off the drawing board. Let's get you back on track.</p>
+
+    <div class="nf-actions">
+      <a href="index.html" class="nf-btn nf-btn-primary">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12l9-9 9 9"/><path d="M5 10v10h14V10"/></svg>
+        Back to home
+      </a>
+      <a href="contact.html" class="nf-btn nf-btn-ghost">
+        Contact support
+      </a>
+    </div>
+
+    <div class="nf-links">
+      <a href="pricing.html">Pricing</a>
+      <span>·</span>
+      <a href="login.html">Log in</a>
+      <span>·</span>
+      <a href="signup.html">Sign up</a>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
