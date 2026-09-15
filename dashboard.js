@@ -158,18 +158,28 @@ function initDashboardShell(role){
     try{ el.textContent = new Date(session.loginTime).toLocaleString(); }catch(e){ el.textContent = '—'; }
   });
 
-  // Sidebar mobile toggle
+  // Sidebar mobile toggle (off-canvas drawer). Also locks background
+  // scroll while open so the page behind the drawer doesn't move.
   const burger = document.querySelector('.sidebar-burger');
   const sidebar = document.querySelector('.dash-sidebar');
   const scrim = document.querySelector('.sidebar-scrim');
   function toggleSidebar(open){
     sidebar.classList.toggle('open', open);
     scrim.classList.toggle('open', open);
+    document.body.classList.toggle('sidebar-open', open);
   }
   if(burger){
     burger.addEventListener('click', () => toggleSidebar(!sidebar.classList.contains('open')));
     scrim.addEventListener('click', () => toggleSidebar(false));
     sidebar.querySelectorAll('.dash-link').forEach(a => a.addEventListener('click', () => toggleSidebar(false)));
+    // Close the drawer automatically if the viewport is resized back to desktop
+    window.addEventListener('resize', () => {
+      if(window.innerWidth > 900 && sidebar.classList.contains('open')) toggleSidebar(false);
+    });
+    // Escape key closes the drawer
+    document.addEventListener('keydown', (e) => {
+      if(e.key === 'Escape' && sidebar.classList.contains('open')) toggleSidebar(false);
+    });
   }
 
   // Nav link active-state + section switching (single-page demo sections)
