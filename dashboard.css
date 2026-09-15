@@ -1,3 +1,4 @@
+/* build: 1789455251 */
 /* ===========================================================
    STACKLY — Auth & Dashboard extension styles
    =========================================================== */
@@ -346,6 +347,21 @@ body.dash-body{ overflow-x:hidden; }
 }
 
 @media (max-width: 900px){
+  /* .dash-shell uses isolation:isolate for desktop layering, which traps
+     .dash-sidebar's z-index inside it. The scrim sits OUTSIDE .dash-shell,
+     so without this override the scrim (z-index:140) silently painted on
+     top of the sidebar (z-index:150) and ate every tap on the nav links,
+     even though the sidebar was visibly on top. Releasing isolation here
+     lets the sidebar's z-index compete directly against the scrim. */
+  .dash-shell{ isolation:auto; }
+
+  /* Belt-and-braces: while the drawer is open, nothing under it can
+     intercept a tap — regardless of any stacking-context edge case.
+     Body class is toggled by dashboard.js. */
+  body.sidebar-open .dash-topbar,
+  body.sidebar-open .dash-content{ pointer-events:none; }
+  body.sidebar-open .dash-sidebar{ pointer-events:auto; }
+
   /* Sidebar becomes an off-canvas drawer. Sits above everything,
      full viewport height, capped width so it never overruns tiny phones. */
   .dash-sidebar{
