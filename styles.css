@@ -771,10 +771,6 @@ body{ animation: pageIn .9s var(--ease) both; }
   .hero-photo{ max-height: 150px; }
   .nav-links, .nav-cta .btn-ghost, .nav-cta .btn-primary{ display:none; }
 
-  /* Only the hamburger is visible in the header on mobile.
-     Every other button on the page is hidden — the header's own
-     nav actions live inside the hamburger menu instead. */
-  .btn:not(.mobile-menu-actions .btn){ display:none !important; }
   .to-top{ display:none !important; }
   .newsletter button{ display:none !important; }
 
