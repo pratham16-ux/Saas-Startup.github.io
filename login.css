@@ -30,7 +30,7 @@
 
 .sv-top{ position:relative; z-index:2; }
 .sv-brand{ display:flex; align-items:center; gap:10px; }
-.sv-brand img{ height:28px; filter: brightness(0) invert(1); }
+.sv-brand img{ height:44px; filter: brightness(0) invert(1); }
 
 .sv-mid{ position:relative; z-index:2; margin-top:auto; }
 .sv-mid h2{

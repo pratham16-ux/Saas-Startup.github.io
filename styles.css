@@ -157,7 +157,7 @@ header.site{
   transition: filter .3s ease, transform .3s ease;
 }
 .brand:hover .logo-tint{ filter: grayscale(1) sepia(1) saturate(3) hue-rotate(-8deg) brightness(1) contrast(1.1); transform: scale(1.03); }
-.footer-brand .logo-tint{ height:32px; }
+.footer-brand .logo-tint{ height:44px; }
 
 .nav-links{
   display:flex; align-items:center; gap: 4px;
